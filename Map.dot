@@ -1,0 +1,71 @@
+digraph Tree {
+	graph [bb="0,0,626.23,459.2"];
+	node [color=black,
+		fontname=helvetica,
+		label="\N",
+		shape=box,
+		style="filled, rounded"
+	];
+	edge [fontname=helvetica];
+	0	 [fillcolor="#e5fad7",
+		height=1.2778,
+		label="age <= 30.5\ngini = 0.778\nsamples = 18\nvalue = [3, 6, 3, 3, 3]\nclass = Classical",
+		pos="392.61,413.2",
+		width=1.9893];
+	1	 [fillcolor="#ffffff",
+		height=1.2778,
+		label="gender <= 0.5\ngini = 0.75\nsamples = 12\nvalue = [3, 0, 3, 3, 3]\nclass = Acoustic",
+		pos="312.61,285.2",
+		width=1.9893];
+	0 -> 1	 [head_lp="335.83,355.7",
+		headlabel=True,
+		labelangle=45,
+		labeldistance=2.5,
+		pos="e,341.45,331.34 363.73,366.99 358.24,358.2 352.44,348.92 346.8,339.89"];
+	8	 [fillcolor="#7be539",
+		height=1.0444,
+		label="gini = 0.0\nsamples = 6\nvalue = [0, 6, 0, 0, 0]\nclass = Classical",
+		pos="473.61,285.2",
+		width=1.9893];
+	0 -> 8	 [head_lp="455.22,347.32",
+		headlabel=False,
+		labelangle=-45,
+		labeldistance=2.5,
+		pos="e,449.74,322.93 421.86,366.99 429.15,355.46 436.98,343.1 444.27,331.56"];
+	2	 [fillcolor="#ffffff",
+		height=1.2778,
+		label="age <= 25.5\ngini = 0.5\nsamples = 6\nvalue = [3, 0, 3, 0, 0]\nclass = Acoustic",
+		pos="232.61,157.2",
+		width=1.9893];
+	1 -> 2	 [pos="e,261.45,203.34 283.73,238.99 278.24,230.2 272.44,220.92 266.8,211.89"];
+	5	 [fillcolor="#ffffff",
+		height=1.2778,
+		label="age <= 25.5\ngini = 0.5\nsamples = 6\nvalue = [0, 0, 0, 3, 3]\nclass = HipHop",
+		pos="393.61,157.2",
+		width=1.9893];
+	1 -> 5	 [pos="e,364.41,203.34 341.86,238.99 347.42,230.2 353.29,220.92 359,211.89"];
+	3	 [fillcolor="#39e5c5",
+		height=1.0444,
+		label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0]\nclass = Dance",
+		pos="71.615,37.6",
+		width=1.9893];
+	2 -> 3	 [pos="e,122.24,75.209 170.37,110.96 157.3,101.25 143.56,91.045 130.62,81.43"];
+	4	 [fillcolor="#e58139",
+		height=1.0444,
+		label="gini = 0.0\nsamples = 3\nvalue = [3, 0, 0, 0, 0]\nclass = Acoustic",
+		pos="232.61,37.6",
+		width=1.9893];
+	2 -> 4	 [pos="e,232.61,75.209 232.61,110.96 232.61,102.55 232.61,93.758 232.61,85.305"];
+	6	 [fillcolor="#3c39e5",
+		height=1.0444,
+		label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 0, 3, 0]\nclass = HipHop",
+		pos="393.61,37.6",
+		width=1.9893];
+	5 -> 6	 [pos="e,393.61,75.209 393.61,110.96 393.61,102.55 393.61,93.758 393.61,85.305"];
+	7	 [fillcolor="#e539c0",
+		height=1.0444,
+		label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 0, 0, 3]\nclass = Jazz",
+		pos="554.61,37.6",
+		width=1.9893];
+	5 -> 7	 [pos="e,503.99,75.209 455.86,110.96 468.93,101.25 482.67,91.045 495.61,81.43"];
+}
